@@ -1,0 +1,193 @@
+.menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom: #eee solid 1px;
+  z-index: 100000;
+}
+
+.top-nav {
+  white-space: nowrap;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.top-btn {
+  display: inline-block;
+  padding: 22rpx;
+  font-size: 16px;
+}
+
+.top-hoverd-btn {
+  color: #42bd56;
+  border-bottom: #42bd56 solid 1px;
+}
+
+.line {
+  display: flex;
+  /* margin: 5rpx; */
+  /* border: #ddd solid 1px; */
+  /* padding: 50rpx; */
+}
+
+.text-center {
+  margin: 0 auto;
+}
+
+.first {
+  text-align: center;
+  padding: 3rpx;
+}
+
+.toutiao {
+  padding: 1rpx;
+}
+
+.toutiao-img {
+  margin-top: 6rpx;
+  width: 100%;
+  height: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+}
+
+.new {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt {
+  margin: 8px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.first-img {
+  display: flex;
+  margin: auto;
+}
+
+.second {
+  /* padding: 5rpx; */
+}
+
+.second-img {
+  height: 50px;
+  width: 50px;
+  padding: 5rpx;
+}
+
+.sl-col {
+  width: 84px;
+  margin: 0 5rpx;
+  border: #ddd solid 1px;
+  text-align: center;
+  padding: 3rpx;
+  font-size: 12px;
+}
+.sl-col view {
+  margin-top: 15rpx;
+}
+
+.forth {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.forth-img {
+  width: 150px;
+  height: 200px;
+}
+
+.forth .left {
+  border: #ddd dotted 1px;
+  padding: 1rpx;
+  margin-right: 5rpx;
+}
+
+.forth .right {
+  display: flex;
+  border: #ddd dotted 1px;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.forth .bottom, .forth .top {
+  display: flex;
+  margin: 1rpx;
+}
+
+.bottom .cl4, .top .cl4 {
+  width: 50%;
+  margin: 1rpx;
+  border: #ddd dotted 1px;
+  flex: auto;
+  text-align: center;
+}
+
+.one-img {
+  flex-direction: column;
+  padding: 1rpx;
+}
+
+.alone-line-text {
+  width: 100%;
+  text-align: center;
+  padding: 30rpx;
+}
+
+.flex-wrp {
+  display: flex;
+  width: 100%;
+}
+
+.bottom_image {
+  margin-top: 10rpx;
+  display: flex;
+  width: 100%;
+}
+
+.flex-item {
+  width: 50%;
+  margin-left: 10px;
+  float: left;
+}
+
+.flex-item1 {
+  width: 50%;
+  margin-top: 8px;
+  float: right;
+}
+
+.cl4-img {
+  margin-top: 8px;
+  width: 90%;
+  height: 100px;
+  display: flex;
+}
+
+image{
+  width: 100%;
+  height:100%;
+}
+.third-line{
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18rpx 5rpx 2rpx;
+}
+.third-line .bind-line image, .third-line .customcode-line image{
+   height: 90px;
+   width: 175px;
+}

@@ -1,0 +1,3 @@
+<scroll-view scroll-y = true>
+  <web-view id="webview" src="{{websrc}}"></web-view>
+</scroll-view>

@@ -1,0 +1,15 @@
+<view class="common-list">
+
+  <block wx:for="{{pageData}}" wx:key="id">
+    <view class="list-item" data-bid="{{item.id}}" bindtap="toDetailPage">
+      <view class="index-list-item">
+        <view class="content">
+          <view class="title">{{item.title}}</view>
+          <view class="createTime">{{item.createTime}}</view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+
+</view>

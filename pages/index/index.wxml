@@ -1,0 +1,65 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="second line">
+  <view bindtap="payment" class="sl-col">
+    <image class="second-img" mode="scaleToFill" src="/images/zhanghao.png"></image>
+    <view>
+      <text>账号信息</text>
+    </view>
+  </view>
+
+   <view bindtap="bind" class="sl-col">
+    <image class="second-img" mode="scaleToFill" src="/images/bangding.png"></image>
+    <view>
+      <text>用户绑定</text>
+    </view>
+
+  </view>
+
+  <view bindtap="payment" class="sl-col">
+    <image class="second-img" mode="scaleToFill" src="/images/money.png"></image>
+    <view>
+      <text>缴费充值</text>
+    </view>
+  </view>
+ 
+
+  <view bindtap="baoxiu" class="sl-col">
+    <image class="second-img" mode="scaleToFill" src="/images/reminder.png"></image>
+    <view>
+      <text>报修预约</text>
+    </view>
+  </view>
+
+  <view bindtap="baozhaung" class="sl-col">
+    <image class="second-img" mode="scaleToFill" src="/images/select.png"></image>
+    <view>
+      <text>报装预约</text>
+    </view>
+  </view>
+</view>
+<view class='third-line line'>
+  <view class='bind-line'>
+    <image src='/images/bind.png' mode="scaleToFill"></image>
+  </view>
+  <view class='customcode-line'>
+    <image src='/images/customcode.png' mode="scaleToFill"></image>
+  </view>
+</view>
+<view class="flex-wrp" style="flex-direction:column;">
+
+  <view class="new" bindtap="news">
+    <image class="toutiao-img" mode="scaleToFill" src="/images/newss.png"></image>
+    <!-- <text class="text-center txt">新闻资讯</text> -->
+  </view>
+  <view class="notice" bindtap="notices">
+    <image class="toutiao-img" mode="scaleToFill" src="/images/notices.png"></image>
+    <!-- <text class="text-center txt">通知公告</text> -->
+  </view>
+</view>

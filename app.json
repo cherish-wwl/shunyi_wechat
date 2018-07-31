@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/local/local",
+    "pages/login/login",
+    "pages/payment/payment",
+    "pages/newsList/newsList",
+    "pages/detail/detail",
+    "pages/notificationList/notificationList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2769dc",
+    "navigationBarTitleText": "掌上市政",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#2769dc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_home_unselected.png",
+        "selectedIconPath": "images/ic_home_selected.png"
+      },
+      {
+        "pagePath": "pages/local/local",
+        "text": "本地宝",
+        "iconPath": "images/ic_local_unselected.png",
+        "selectedIconPath": "images/ic_local_selected.png"
+      }
+    ]
+  }
+}

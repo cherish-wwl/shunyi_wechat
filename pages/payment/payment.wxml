@@ -1,0 +1,10 @@
+<view class="common-list">
+  <block wx:key="id" wx:for="{{pageData}}">
+    <view class="list-item {{item.images[0] ? 'has-img': ''}}" data-id="{{item.id}}" bindtap="toDetailPage">
+      <view class="content">
+        <text>{{item.title}}</text>
+      </view>
+      <image wx:if="{{item.images[0]}}" src="{{item.images[0]}}" class="cover"></image>
+    </view>
+  </block>
+</view>

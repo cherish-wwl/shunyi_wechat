@@ -8,3 +8,41 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.font20{
+  font-size: 40rpx;
+}
+.font19{
+  font-size: 38rpx;
+}
+.font18{
+  font-size: 36rpx;
+}
+.font17{
+  font-size: 34rpx;
+}
+.font16{
+  font-size: 32rpx;
+}
+.font15{
+  font-size: 30rpx;
+}
+.font14{
+  font-size: 28rpx;
+}
+.font13{
+  font-size: 26rpx;
+}
+.fc_888{
+  color: #888;
+}
+.fc_orange{
+  color: orange;
+}
+.fb_600{
+  font-weight: 600;
+}
+
+.dis_flex{
+  display: flex;
+  align-items: center;
+}

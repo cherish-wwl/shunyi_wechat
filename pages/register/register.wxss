@@ -1,0 +1,44 @@
+/* pages/register/register.wxss */
+page {
+  background-color: #eee;
+}
+.item-view{
+  display:flex;
+  padding:20rpx 0;
+  width: 100%;
+  border-bottom:1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.item-view:first-child{
+  padding-top: 40rpx;
+}
+.item-view:last-child{
+  border-bottom: 0;
+}
+.item-text {
+  white-space:nowrap;
+}
+.blueBtn{
+  background-color: #2769dc;
+  border-radius: 0;
+  color: #fff;
+}
+.getCodeBtn{
+  width:255rpx;
+}
+.saveBtn{
+ margin: 60rpx 20rpx 0;
+}
+.tool-line{
+  margin: 30rpx;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+form {
+  display: flex;
+  background-color: #fff;
+  padding: 0 40rpx;
+}

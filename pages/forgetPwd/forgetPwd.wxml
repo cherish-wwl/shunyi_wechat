@@ -1,0 +1,21 @@
+<!--pages/forgetPwd/forgetPwd.wxml-->
+<view class="forgetPwd">
+  <form >
+    <view class="item-view">
+      <text class="item-text font15">手机号：</text>
+      <input class="item-input font15" placeholder="请输入手机号" type="text" bindinput="phoneInput" value="{{phone}}" />
+    </view>
+    <view class="item-view">
+      <text class="item-text font15">验证码：</text>
+      <input class="item-input font15" password placeholder="请输入六位验证码" bindinput="varyCodeInput" value="{{varyCode}}" />
+      <button class="getCodeBtn font13 blueBtn" disabled='{{disabled}}' bindtap="getVerificationCode">{{time}}</button>
+    </view>
+    <view class="item-view">
+      <text class="item-text font15" space="nbsp">密    码：</text>
+      <input class="item-input font15" password placeholder="请输入密码" bindinput="passWdInput" value="{{passWd}}" />
+    </view>   
+  </form>
+  <view class="viewName">
+    <button class="saveBtn blueBtn font16">保存</button>
+  </view>
+</view>

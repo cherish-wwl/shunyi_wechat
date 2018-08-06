@@ -6,12 +6,12 @@
   <scroll-view>
     <form bindsubmit="loginUser">
       <view class="useritemView">
-        <text class="usertext">用户名：</text>
-        <input class="userinput" placeholder="请输入用户名" type="text" bindinput="userNameInput" value="{{userName}}" />
+        <text class="usertext font15">用户名：</text>
+        <input class="userinput font15" placeholder="请输入用户名" type="text" bindinput="userNameInput" value="{{userName}}" />
       </view>
       <view class="useritemView">
-        <text class="usertext">密 码：</text>
-        <input class="userinput" password placeholder="请输入密码" bindinput="passWdInput" value="{{passWd}}" />
+        <text class="usertext font15">密 码：</text>
+        <input class="userinput font15" password placeholder="请输入密码" bindinput="passWdInput" value="{{passWd}}" />
       </view>
       <!-- <view class="useritemView">
         <text class="usertext">手 机：</text>
@@ -20,9 +20,24 @@
       <!-- <view class="useritemView-image" bindtap="rembUser">
         <image src="{{image}}" class="user-image"></image>记住密码
       </view> -->
-      <view class="viewName" style="background-color:#fbf9fe">
-        <button class="loginBtn" bindtap="loginBtnClick">登录</button>
-      </view>
+     
     </form>
+    <!-- <view class="viewName" style="background-color:#fbf9fe"> -->
+    <view class="viewName">
+      <button class="loginBtn btn" bindtap="loginBtnClick">登录</button>
+    </view>
+    <view class="viewName">
+      <button class="loginBtn btn" bindtap="settingBtnClick">系统设置</button>
+    </view>
+    <view class='tool-line'>
+      <view class='font15 fb_600' bindtap='jumpToForgetPwd'>
+        <text>忘记密码</text> 
+      </view>
+      <text class='font16 fc_888'>|</text>
+      <view class='font15 fb_600' bindtap='jumpToRegister'>
+        <text>立即注册</text>
+      </view>
+    </view>
+
   </scroll-view>
 </view>

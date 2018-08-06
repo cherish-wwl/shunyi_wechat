@@ -6,7 +6,9 @@
     "pages/payment/payment",
     "pages/newsList/newsList",
     "pages/detail/detail",
-    "pages/notificationList/notificationList"
+    "pages/notificationList/notificationList",
+    "pages/register/register",
+    "pages/forgetPwd/forgetPwd"
   ],
   "window": {
     "backgroundTextStyle": "light",

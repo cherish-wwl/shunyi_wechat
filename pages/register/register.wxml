@@ -1,0 +1,39 @@
+<!--pages/register/register.wxml-->
+<view class="register">
+  <form >
+    <view class="item-view">
+      <view class='dis_flex'>
+        <text class="item-text font15">手机号：</text>
+        <input class="item-input font15" placeholder="请输入手机号" type="text" bindinput="phoneInput" value="{{phone}}" />
+      </view>
+    </view>
+    <view class="item-view">
+      <view class='dis_flex'>
+        <text class="item-text font15">验证码：</text>
+        <input class="item-input font15" password placeholder="请输入六位验证码" bindinput="varyCodeInput" value="{{varyCode}}" />
+      </view>
+      <button class="getCodeBtn font13 blueBtn" disabled='{{disabled}}' bindtap="getVerificationCode">{{time}}</button>
+    </view>
+    <view class="item-view">
+      <view class='dis_flex'>
+        <text class="item-text font15" space="nbsp">密    码：</text>
+        <input class="item-input font15" password placeholder="请输入密码" bindinput="passWdInput" value="{{passWd}}" />
+      </view>
+    </view>
+    
+  </form>
+  <view class="tool-line">
+    <view bindtap='toggleAgreeProtrol'>
+      <icon type="success" size="20" color='{{ toggleAgreeColor }}'/>
+      <text class='font13' space="nbsp">   请同意注册协议</text>
+    </view>
+    <view>
+  <text class='font13 fc_orange'  space="nbsp"> 注册协议</text>
+    </view>
+  </view>
+  <view class="viewName">
+    <button class="saveBtn blueBtn font16">保存</button>
+  </view>
+
+  
+</view>

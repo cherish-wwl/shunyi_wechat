@@ -1,0 +1,39 @@
+/* pages/forgetPwd/forgetPwd.wxss */
+page {
+  background-color: #eee;
+}
+.item-view{
+  display:flex;
+  /* background-color:#fff; */
+  padding:20rpx 0;
+  border-bottom:1px solid #ddd;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-view:first-child{
+  padding-top: 40rpx;
+}
+.item-view:last-child{
+  border-bottom: 0;
+}
+.item-text {
+  white-space:nowrap;
+}
+.blueBtn{
+  background-color: #2769dc;
+  border-radius: 0;
+  color: #fff;
+}
+button.getCodeBtn{
+  width:255rpx;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.saveBtn{
+ margin: 60rpx 20rpx 0;
+}
+form {
+  display: flex;
+  background-color: #fff;
+  padding: 0 40rpx;
+}

@@ -90,7 +90,18 @@ Page({
 
 
   },
-
+  // 跳转至忘记密码页面
+  jumpToForgetPwd: function (){
+    wx.navigateTo({
+      url: '../forgetPwd/forgetPwd',
+    })
+  },
+  // 跳转至立即注册页面
+  jumpToRegister: function () {
+    wx.navigateTo({
+      url: '../register/register',
+    })
+  }
 })
 function toast(toast) {
   wx.showToast({

@@ -46,3 +46,6 @@
   display: flex;
   align-items: center;
 }
+.dis_inline_b{
+  display: inline-block;
+}

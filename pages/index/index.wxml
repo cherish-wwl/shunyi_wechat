@@ -1,5 +1,5 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}" wx:key="key">
     <swiper-item>
       <image src="{{item}}" class="slide-image" width="355" height="150" />
     </swiper-item>
@@ -7,7 +7,7 @@
 </swiper>
 
 <view class="second line">
-  <view bindtap="payment" class="sl-col">
+  <view bindtap="jumpToUserInfoPage" class="sl-col">
     <image class="second-img" mode="scaleToFill" src="/images/zhanghao.png"></image>
     <view>
       <text>账号信息</text>
@@ -17,7 +17,7 @@
    <view bindtap="bind" class="sl-col">
     <image class="second-img" mode="scaleToFill" src="/images/bangding.png"></image>
     <view>
-      <text>用户绑定</text>
+      <text>缴费充值</text>
     </view>
 
   </view>
@@ -25,7 +25,7 @@
   <view bindtap="payment" class="sl-col">
     <image class="second-img" mode="scaleToFill" src="/images/money.png"></image>
     <view>
-      <text>缴费充值</text>
+      <text>查询服务</text>
     </view>
   </view>
  
@@ -45,7 +45,7 @@
   </view>
 </view>
 <view class='third-line line'>
-  <view class='bind-line'>
+  <view class='bind-line' bindtap='jumpToUserBindPage'>
     <image src='/images/bind.png' mode="scaleToFill"></image>
   </view>
   <view class='customcode-line'>

@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -44,7 +44,13 @@
 				{
 					"id": -1,
 					"name": "忘记密码",
-					"pathName": "pages/forgetPwd/forgetPwd"
+					"pathName": "pages/forgetPwd/forgetPwd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户绑定",
+					"pathName": "pages/userManage/userBind/userBind"
 				}
 			]
 		}

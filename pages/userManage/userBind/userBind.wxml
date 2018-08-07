@@ -1,0 +1,69 @@
+<!--pages/userManage/userBind/userBind.wxml-->
+<view class="userBind">
+  <view class='tab_title'>
+    <view class='tab_item' bindtap="setActive" data-num='1'>
+      <text>客户编号绑定</text>
+    </view>
+    <view class='tab_item' bindtap="setActive" data-num='2'>
+      <text>住址绑定</text>
+    </view>
+  </view>
+  <view class='tab_content'>
+    <view class="content" hidden="{{!(activeIndex == 1)}}">
+      <form >
+        <view class="item-view">
+          <text class="item-text font15">客户编号</text>
+          <input class="item-input font15" placeholder="请输入客户编号" type="text" bindinput="inputOne" value="{{clientNum}}" />
+        </view>
+        <view class="item-view">
+          <text class="item-text font15">客户名称</text>
+          <input class="item-input font15" placeholder="请输入客户名称" type="text" bindinput="inputTwo" value="{{clientName}}" />
+        </view>
+      </form>
+      <view>
+        <button class="saveBtn blueBtn font16">绑定</button>
+      </view>
+    </view>
+    <view class="content" hidden="{{!(activeIndex == 2)}}">
+      <form >
+        <view class="item-view">
+          <icon type="success" size="20"/>
+          <input class="item-input font15" placeholder="请输入小区名" type="text" bindinput="inputOne" value="{{plotNum}}" />
+          <icon type="success" size="20"/>
+        </view>
+        <view class="item-view">
+          <icon type="success" size="20"/>
+          <input class="item-input font15" placeholder="请输入楼号 (例如: 1）" type="text" bindinput="inputTwo" value="{{buildingNum}}" />
+        </view>
+        <view class="item-view">
+          <icon type="success" size="20"/>
+          <input class="item-input font15" placeholder="请输入单元号 (例如: 1）" type="text" bindinput="inputTwo" value="{{unitNum}}" />
+        </view>
+        <view class="item-view">
+          <icon type="success" size="20"/>
+          <input class="item-input font15" placeholder="请输入门牌号 (例如: 101）" type="text" bindinput="inputTwo" value="{{houseNum}}" />
+        </view>
+        <view class="item-view">
+          <icon type="success" size="20"/>
+          <input class="item-input font15" placeholder="请输入房本中住户姓名" type="text" bindinput="inputTwo" value="{{hostName}}" />
+        </view>
+      </form>
+      <view>
+        <button class="saveBtn blueBtn font16">绑定</button>
+      </view>
+      <view class='waening_text'>
+        <view>
+          <text class='fc_orange font20'>温馨提示：</text>
+        </view>
+        <view>
+          <text class='font16'>1.不得绑定他人账户，否则造成的损失及法律责任由绑定他人账户者承担</text>
+        </view>
+        <view>
+          <br />
+          <text class='font16'>2.租客可以直接住址绑定</text>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+</view>

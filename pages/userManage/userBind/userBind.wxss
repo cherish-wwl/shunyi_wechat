@@ -1,0 +1,25 @@
+/* pages/userManage/userBind/userBind.wxss */
+.tab_title{
+  display: block;
+  width: 100%;
+  border-bottom: 4rpx solid #ddd;
+  padding: 10rpx 0;
+}
+.tab_title .tab_item{
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  padding: 5rpx 0;
+}
+.tab_title .tab_item:first-child{
+  border-right:3rpx solid #2769dc;
+}
+
+.item-view{
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+input{
+  width: 100%；
+}

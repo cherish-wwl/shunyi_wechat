@@ -41,9 +41,37 @@ Page({
     }
 
   },
-  //用户绑定点击事件
-  bind: function () {
+  // 查看用户信息
+  jumpToUserInfoPage: function () {
+    isLogin = app.globalData.isLogin;
+    console.log(app.globalData.isLogin)
+    console.log(isLogin)
+    if (isLogin) {
+      wx.navigateTo({
+        url: '../userManage/userInfo/userInfo',
+      })
 
+    } else {
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    }
+  },
+  //用户绑定点击事件
+  jumpToUserBindPage: function () {
+    isLogin = app.globalData.isLogin;
+    console.log(app.globalData.isLogin)
+    console.log(isLogin)
+    if (isLogin) {
+      wx.navigateTo({
+        url: '../userManage/userBind/userBind',
+      })
+
+    } else {
+      wx.navigateTo({
+        url: '../login/login',
+      })
+    }
   },
   //报修预约点击事件
   baoxiu: function () {

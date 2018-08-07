@@ -8,7 +8,9 @@
     "pages/detail/detail",
     "pages/notificationList/notificationList",
     "pages/register/register",
-    "pages/forgetPwd/forgetPwd"
+    "pages/forgetPwd/forgetPwd",
+    "pages/userManage/userBind/userBind",
+    "pages/userManage/userInfo/userInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

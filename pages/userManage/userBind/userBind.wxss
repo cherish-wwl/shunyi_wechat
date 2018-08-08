@@ -1,9 +1,15 @@
 /* pages/userManage/userBind/userBind.wxss */
+
+
+page {
+  background-color:#eee; 
+}
 .tab_title{
   display: block;
   width: 100%;
   border-bottom: 4rpx solid #ddd;
   padding: 10rpx 0;
+  background-color:#fff; 
 }
 .tab_title .tab_item{
   display: inline-block;
@@ -17,9 +23,32 @@
 
 .item-view{
   display: flex;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: center;
+  padding: 20rpx 0;
+  
 }
-input{
-  width: 100%；
+.item-view:not(:last-child){
+  border-bottom: 3rpx solid #ddd;
 }
+
+form {
+  display: block;
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+.btn_line{
+  margin: 40rpx 20rpx;
+}
+.flex1{
+  flex: 1;
+}
+.warning_text{
+  /* width: 100%;  */
+  margin: 100rpx 40rpx 40rpx 40rpx;
+}
+.scroll-view_H {
+  height: 300rpx;
+  width: 100%;
+}
+

@@ -19,11 +19,7 @@ page {
 .item-text {
   white-space:nowrap;
 }
-.blueBtn{
-  background-color: #2769dc;
-  border-radius: 0;
-  color: #fff;
-}
+
 button.getCodeBtn{
   width:255rpx;
   padding-left: 0 !important;

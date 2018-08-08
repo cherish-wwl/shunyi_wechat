@@ -2,68 +2,84 @@
 <view class="userBind">
   <view class='tab_title'>
     <view class='tab_item' bindtap="setActive" data-num='1'>
-      <text>客户编号绑定</text>
+      <text class='font15'>客户编号绑定</text>
     </view>
     <view class='tab_item' bindtap="setActive" data-num='2'>
-      <text>住址绑定</text>
+      <text class='font15'>住址绑定</text>
     </view>
   </view>
   <view class='tab_content'>
     <view class="content" hidden="{{!(activeIndex == 1)}}">
       <form >
         <view class="item-view">
-          <text class="item-text font15">客户编号</text>
-          <input class="item-input font15" placeholder="请输入客户编号" type="text" bindinput="inputOne" value="{{clientNum}}" />
+          <text class="item-text font16 fb_600">客户编号：</text>
+          <input class="item-input font15 flex1" placeholder="请输入客户编号" type="text" bindinput="inputOne" value="{{clientNum}}" />
         </view>
         <view class="item-view">
-          <text class="item-text font15">客户名称</text>
-          <input class="item-input font15" placeholder="请输入客户名称" type="text" bindinput="inputTwo" value="{{clientName}}" />
+          <text class="item-text font16 fb_600">客户名称：</text>
+          <input class="item-input font15 flex1" placeholder="请输入客户名称" type="text" bindinput="inputTwo" value="{{clientName}}" />
         </view>
       </form>
-      <view>
-        <button class="saveBtn blueBtn font16">绑定</button>
+      <view class='btn_line'>
+        <button class="blueBtn font16">绑定</button>
+      </view>
+      <view class='warning_text'>
+        <view>
+          <text class='fc_orange font18'>温馨提示：</text>
+        </view>
+        <view>
+          <text class='font16'>1.不得绑定他人账户，否则造成的损失及法律责任由绑定他人账户者承担</text>
+        </view>
       </view>
     </view>
     <view class="content" hidden="{{!(activeIndex == 2)}}">
       <form >
         <view class="item-view">
           <icon type="success" size="20"/>
-          <input class="item-input font15" placeholder="请输入小区名" type="text" bindinput="inputOne" value="{{plotNum}}" />
-          <icon type="success" size="20"/>
+          <input class="item-input font15 flex1" placeholder="请输入小区名" type="text" bindinput="inputOne" value="{{plotNum}}" />
+          <icon bindtap='showModel' type="success" size="20"/>
         </view>
         <view class="item-view">
           <icon type="success" size="20"/>
-          <input class="item-input font15" placeholder="请输入楼号 (例如: 1）" type="text" bindinput="inputTwo" value="{{buildingNum}}" />
+          <input class="item-input font15 flex1" placeholder="请输入楼号 (例如: 1）" type="text" bindinput="inputTwo" value="{{buildingNum}}" />
         </view>
         <view class="item-view">
           <icon type="success" size="20"/>
-          <input class="item-input font15" placeholder="请输入单元号 (例如: 1）" type="text" bindinput="inputTwo" value="{{unitNum}}" />
+          <input class="item-input font15 flex1" placeholder="请输入单元号 (例如: 1）" type="text" bindinput="inputTwo" value="{{unitNum}}" />
         </view>
         <view class="item-view">
           <icon type="success" size="20"/>
-          <input class="item-input font15" placeholder="请输入门牌号 (例如: 101）" type="text" bindinput="inputTwo" value="{{houseNum}}" />
+          <input class="item-input font15 flex1" placeholder="请输入门牌号 (例如: 101）" type="text" bindinput="inputTwo" value="{{houseNum}}" />
         </view>
         <view class="item-view">
           <icon type="success" size="20"/>
-          <input class="item-input font15" placeholder="请输入房本中住户姓名" type="text" bindinput="inputTwo" value="{{hostName}}" />
+          <input class="item-input font15 flex1" placeholder="请输入房本中住户姓名" type="text" bindinput="inputTwo" value="{{hostName}}" />
         </view>
       </form>
-      <view>
-        <button class="saveBtn blueBtn font16">绑定</button>
+      <view class='btn_line'>
+        <button class="blueBtn font16">绑定</button>
       </view>
-      <view class='waening_text'>
+      <view class='warning_text'>
         <view>
-          <text class='fc_orange font20'>温馨提示：</text>
+          <text class='fc_orange font18'>温馨提示：</text>
         </view>
         <view>
           <text class='font16'>1.不得绑定他人账户，否则造成的损失及法律责任由绑定他人账户者承担</text>
         </view>
         <view>
-          <br />
           <text class='font16'>2.租客可以直接住址绑定</text>
         </view>
       </view>
+      <modal hidden="{{ hiddenmodalput }}" title="小区名" confirm-text="" cancel-text="" bindtap="hideModel">
+        <scroll-view class="scroll-view_H" scroll-y style="width: 100%">
+          <view>
+            <text wx:for="{{ plotData }}" wx:key="key" wx:item="item" data-plotnum="{{ item.name }}" bindtap='choosePolt'>
+              {{ item.name }}
+            </text>
+          </view>
+        </scroll-view>
+      </modal>
     </view>
   </view>
- 
+   
 </view>

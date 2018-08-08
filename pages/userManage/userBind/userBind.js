@@ -15,7 +15,9 @@ Page({
     buildingNum:'',
     unitNum:'',
     houseNum:'',
-    hostName:''
+    hostName:'',
+    hiddenmodalput:true,
+    plotData:null,
   },
   // 设置当前显示的tab页
   setActive: function (e) {
@@ -32,6 +34,31 @@ Page({
   // 绑定客户名称输入事件
   inputTwo: function () {
 
+  },
+  // 显示弹出框
+  showModel:function () {
+    // 加载小区数据
+    var plotData = [{ id: 1, name: "小区1" },{ id: 2, name: "小区2" },
+      { id: 3, name: "小区3" }, { id: 4, name: "小区4" }, { id: 5, name: "小区5" }, 
+      { id: 6, name: "小区6" }]
+    this.setData ({
+      plotData: plotData,
+      hiddenmodalput: false
+    })
+    
+  },
+  // 获取选中的小区 
+  choosePolt: function (e) {
+    console.log(e)
+    this.setData({
+      hiddenmodalput: true,
+      plotNum: e.currentTarget.dataset.plotnum
+    })
+  },
+  hideModel: function (){
+    this.setData({
+      hiddenmodalput: true
+    })
   },
   /**
    * 生命周期函数--监听页面加载

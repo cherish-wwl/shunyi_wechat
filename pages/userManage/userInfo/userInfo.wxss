@@ -1,1 +1,43 @@
 /* pages/userManage/userInfo/userInfo.wxss */
+page {
+  background-color: #eee;
+}
+.user-icon{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%; 
+}
+.portrait{
+  
+  width: 100rpx;
+}
+.user-item {
+  display: block;
+  width: 100%;
+  /* align-items: center;
+  justify-content: space-around; */
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+  border-bottom: 3rpx solid #ddd;
+}
+.portrait{
+  width: 15%;
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+}
+.info{
+  width: 60%;
+  display: inline-block;
+  margin: auto;
+}
+.user_btn{
+  width: 20%;
+  display: inline-block;
+  margin: auto;
+}
+
+.user_btn button {
+  border-radius: 10%;
+}
+

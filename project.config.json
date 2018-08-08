@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -50,7 +50,13 @@
 				{
 					"id": -1,
 					"name": "用户绑定",
-					"pathName": "pages/userManage/userBind/userBind"
+					"pathName": "pages/userManage/userBind/userBind",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "帐号信息",
+					"pathName": "pages/userManage/userInfo/userInfo"
 				}
 			]
 		}

@@ -1,18 +1,45 @@
 // pages/userManage/userInfo/userInfo.js
+var app = getApp()
+var isLogin = false;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    typp: 1,
+    userList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // 验证用户是否登录
+    var isLogin = app.globalData.isLogin;
+    //  判断是否登录，未登录则跳转到登录页面
+    // if (!isLogin) {
+    //   wx.navigateTo({
+    //     url: '../../login/login',
+    //   })
+    // }
+    // 加载用户列表
+    var userList = [
+      { id: 1, name: '袁月明', num: "600000001", phone: 13488733905, portrait:'/images/app_logo.png' },
+      { id: 2, name: '郑涛', num: "0200104120001", phone: 13488733905, portrait: '/images/app_logo.png' },
+      { id: 11, name: '袁月明', num: "600000001", phone: 13488733905, portrait: '/images/app_logo.png' },
+      { id: 22, name: '郑涛', num: "0200104120001", phone: 13488733905, portrait: '/images/app_logo.png' },
+      { id: 13, name: '袁月明', num: "600000001", phone: 13488733905, portrait: '/images/app_logo.png' },
+      { id: 23, name: '郑涛', num: "0200104120001", phone: 1348873390, portrait: '/images/app_logo.png' },
+      { id: 23, name: '郑涛', num: "0200104120001", phone: 1348873390, portrait: '/images/app_logo.png' },
+      { id: 14, name: '袁月明', num: "600000001", phone: 13488733905, portrait: '/images/app_logo.png' },
+      { id: 23, name: '郑涛', num: "0200104120001", phone: 1348873390, portrait: '/images/app_logo.png' },
+      { id: 24, name: '郑涛', num: "0200104120001", phone: 13488733905, portrait: '/images/app_logo.png' }
+    ]
+
+    this.setData({
+      userList: userList
+    })
   },
 
   /**

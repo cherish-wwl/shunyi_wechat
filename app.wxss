@@ -49,3 +49,12 @@
 .dis_inline_b{
   display: inline-block;
 }
+
+.blueBtn{
+  background-color: #2769dc;
+  border-radius: 0;
+  color: #fff;
+}
+.nowarp{
+  white-space: nowrap;
+}

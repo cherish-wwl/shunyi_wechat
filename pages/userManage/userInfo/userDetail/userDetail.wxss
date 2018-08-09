@@ -1,0 +1,7 @@
+/* pages/userManage/userInfo/userDetail/userDetail.wxss */
+.userDetailPanel{
+  padding: 20rpx;
+}
+.line {
+  padding: 20rpx
+}

@@ -1,0 +1,18 @@
+<!--pages/userManage/userInfo/userDetail/userDetail.wxml-->
+<view class="userDetail">
+  <view class='userDetailPanel' >
+    <!-- 用户详情页 -->
+    <view class='line'>
+      <text class='font17 fb_600'>客户姓名:  {{ userinfo.name }}</text>
+    </view>
+    <view class='line'>
+      <text class='font17 fb_600'>客户编号:  {{ userinfo.num }}</text>
+    </view>
+    <view class='line'>
+      <text class='font17 fb_600'>客户地址:  {{ userinfo.address }}</text>
+    </view>
+    <view class='line'>
+      <text class='font17 fb_600'>客户电话:  {{ userinfo.phone }}</text>
+    </view>
+  </view>
+</view>

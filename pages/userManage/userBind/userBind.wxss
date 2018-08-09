@@ -18,7 +18,10 @@ page {
   padding: 5rpx 0;
 }
 .tab_title .tab_item:first-child{
-  border-right:3rpx solid #2769dc;
+  border-right:4rpx solid #2769dc;
+}
+.tab_item.active{
+  color: #2769dc;
 }
 
 .item-view{

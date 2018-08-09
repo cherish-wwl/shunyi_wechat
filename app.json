@@ -10,7 +10,8 @@
     "pages/register/register",
     "pages/forgetPwd/forgetPwd",
     "pages/userManage/userBind/userBind",
-    "pages/userManage/userInfo/userInfo"
+    "pages/userManage/userInfo/userList/userList",
+    "pages/userManage/userInfo/userDetail/userDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

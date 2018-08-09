@@ -1,10 +1,10 @@
 <!--pages/userManage/userBind/userBind.wxml-->
 <view class="userBind">
   <view class='tab_title'>
-    <view class='tab_item' bindtap="setActive" data-num='1'>
+    <view class="tab_item {{activeIndex == 1?'active':''}}" bindtap="setActive" data-num='1'>
       <text class='font15'>客户编号绑定</text>
     </view>
-    <view class='tab_item' bindtap="setActive" data-num='2'>
+    <view class="tab_item {{activeIndex == 2?'active':''}}" bindtap="setActive" data-num='2'>
       <text class='font15'>住址绑定</text>
     </view>
   </view>

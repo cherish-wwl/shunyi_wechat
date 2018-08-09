@@ -1,4 +1,4 @@
-/* pages/userManage/userInfo/userInfo.wxss */
+/* pages/userManage/userInfo/userList/userList.wxss */
 page {
   background-color: #eee;
 }

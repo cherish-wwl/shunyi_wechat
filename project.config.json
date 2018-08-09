@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -54,9 +54,16 @@
 					"query": ""
 				},
 				{
+					"id": 3,
+					"name": "账号信息",
+					"pathName": "pages/userManage/userInfo/userList/userList",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "帐号信息",
-					"pathName": "pages/userManage/userInfo/userInfo"
+					"name": "账号信息-详情",
+					"pathName": "pages/userManage/userInfo/userDetail/userDetail",
+					"query": ""
 				}
 			]
 		}

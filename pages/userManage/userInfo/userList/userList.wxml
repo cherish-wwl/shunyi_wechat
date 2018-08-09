@@ -1,6 +1,6 @@
-<!--pages/userManage/userInfo/userInfo.wxml-->
+<!--pages/userManage/userInfo/userList/userList.wxml-->
 <view class="userInfo">
-  <view class='userListPanel' >
+  <view class='userListPanel'>
     <!-- 用户列表页 -->
     <view class='user-item' wx:for="{{ userList }}" wx:key="key" wx:item="item">
       <view class='portrait'>
@@ -19,12 +19,10 @@
         </view>
       </view>
       <view class='user_btn'>
-        <button size='mini' type='primary'>详情</button>
-        <button size='mini' type='warn'>解绑</button>
+        <button size='mini' type='primary' bindtap='seeDetail' data-userid="{{item.id}}">详情</button>
+        <button size='mini' type='warn' bindtap='unbindUser' data-userid="{{item.id}}">解绑</button>
       </view>
     </view>
   </view>
-  <view class='userDetailPanel'>
-    <!-- 用户详情页 -->
-  </view>
 </view>
+

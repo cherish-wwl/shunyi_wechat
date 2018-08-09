@@ -48,7 +48,7 @@ Page({
     console.log(isLogin)
     if (isLogin) {
       wx.navigateTo({
-        url: '../userManage/userInfo/userInfo',
+        url: '../userManage/userInfo/userList/userList',
       })
 
     } else {
